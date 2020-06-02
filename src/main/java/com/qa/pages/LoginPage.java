@@ -16,11 +16,11 @@ public class LoginPage extends TestBase {
 	@FindBy(name="txtPassword")
 	WebElement password;
 	
-	@FindBy(name="Submit")
+	@FindBy(id="btnLogin")
 	WebElement submit;
 	
-	@FindBy(xpath="//img[@class='Submit']")
-	WebElement logo;
+	/*@FindBy(xpath="//img[@class='Submit']")
+	WebElement logo;*/
 	
 	
 	public LoginPage() {
@@ -31,13 +31,14 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public void validateLogo() {
-		logo.isDisplayed();
-	}
+	/*public boolean validateLogo() {
+		return logo.isDisplayed();
+	}*/
 	
 	public HomePage login(String url,String ps) {
 		username.sendKeys(url);
 		password.sendKeys(ps);
+	    submit.click();
 		return new HomePage();
 		
 	}

@@ -17,25 +17,22 @@ public class TestBase {
 	public static Properties prop;
 	public static WebDriver driver;
 
-	public TestBase()  {
+	public TestBase() {
 
 		prop = new Properties();
 
-		
-			FileInputStream file;
-			try {
-				file = new FileInputStream(
-						"C:\\Users\\USER\\Desktop\\Selenium\\orangehrm-project\\src\\main\\java\\com\\qa\\config\\config.properties");
-				prop.load(file);
-			} catch (FileNotFoundException e) {
-			
-				e.printStackTrace();
-			} catch (IOException e) {
-				
-				e.printStackTrace();
-			}
-			
-		
+		FileInputStream file;
+		try {
+			file = new FileInputStream(
+					"C:\\Users\\USER\\Desktop\\Selenium\\orangehrm-project\\src\\main\\java\\com\\qa\\config\\config.properties");
+			prop.load(file);
+		} catch (FileNotFoundException e) {
+
+			e.printStackTrace();
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
 
 	}
 
@@ -48,17 +45,17 @@ public class TestBase {
 			driver = new ChromeDriver();
 
 		} else if (browsername.equals("firefox")) {
-			String browsername1 = prop.getProperty("browser1");
+			//String browsername1 = prop.getProperty("browser1");
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Users\\USER\\Desktop\\Selenium\\orangehrm-project\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-
+       
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Utility.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Utility.IMPLICIT_WAIT, TimeUnit.SECONDS);
-
+		  driver.get(prop.getProperty("url"));
 	}
 
 }
