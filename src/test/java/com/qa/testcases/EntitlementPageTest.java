@@ -5,25 +5,26 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
+import com.qa.pages.AddEntitlement;
 import com.qa.pages.AssignLeavePage;
+import com.qa.pages.EmpolyeeEntitlement;
 import com.qa.pages.EntitlementPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LeaveList;
 import com.qa.pages.LeavePage;
 import com.qa.pages.LoginPage;
-import com.qa.pages.ReportPage;
 
-public class LeavePageTest extends TestBase {
-
+public class EntitlementPageTest extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;
 	LeavePage leavepage;
 	AssignLeavePage assignpage;
 	EntitlementPage entitlement;
 	LeaveList leavelist;
-	ReportPage report;
+	AddEntitlement addemp;
+	EmpolyeeEntitlement empEnt;
 
-	public LeavePageTest() {
+	public EntitlementPageTest() {
 		super();
 	}
 
@@ -31,34 +32,24 @@ public class LeavePageTest extends TestBase {
 	public void SetUp() {
 		intialization();
 		loginpage = new LoginPage();
+		entitlement = new EntitlementPage();
 		homepage = loginpage.login(prop.getProperty("userid"), prop.getProperty("password"));
-		leavepage = homepage.validateassignPage();
-	}
-	
-	@Test(priority=1)
-	public void varifyAssignPage() {
-		assignpage=leavepage.varifyAssignleave();
+		entitlement = leavepage.varifyEntitlement();
+
 	}
 
-	@Test(priority=2)
-	public void varifyEntitlementPage() {
-		entitlement=leavepage.varifyEntitlement();
+	@Test
+	public void varifyAddEnt() {
+		addemp = entitlement.varifyAddEntitlement();
 	}
-	
-	@Test(priority=3)
-	public void varifyLeaveList() {
-		leavelist=leavepage.varifyLeaveList();
+
+	@Test
+	public void varifyEmpEnt() {
+		empEnt = entitlement.varifyEmpEntitlement();
 	}
-	
-	@Test(priority=4)
-	public void varifyReports() {
-		report=leavepage.varifyReport();
-	}
-	
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
-	
-
 }

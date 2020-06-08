@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,11 +15,14 @@ public class HomePage extends TestBase {
 	@FindBy(id = "menu_dashboard_index")
 	WebElement dashboard;
 
-	@FindBy(xpath = "//*[@id=\"menu_leave_viewLeaveModule\"]/a/span[2]")
+	@FindBy(id="menu_leave_viewLeaveModule")
 	WebElement assignleave;
-	
-	@FindBy(xpath="//span[contains(text(),'Admin')]")
+
+	@FindBy(id = "menu_admin_viewAdminModule")
 	WebElement adminpage;
+	
+	@FindBy(id="menu_leave_Entitlements")
+	WebElement entitlement;
 
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -34,9 +38,10 @@ public class HomePage extends TestBase {
 		assignleave.click();
 		return new LeavePage();
 	}
-    
+
 	public AdminPage varifyAdminPage() {
 		adminpage.click();
 		return new AdminPage();
 	}
+	
 }
