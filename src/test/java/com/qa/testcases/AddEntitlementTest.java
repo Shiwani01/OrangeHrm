@@ -1,6 +1,5 @@
 package com.qa.testcases;
 
-import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -37,7 +36,8 @@ public class AddEntitlementTest extends TestBase {
 	@Test
 	public void addEmpEntitlement() {
 		
-		addemp.addLeaveEnt("Jasmin", "123");
+		addemp.addLeaveEnt("Ross Jack Gellar", "123");
+		
 		addemp.leaveType();
 		addemp.period();
 	}

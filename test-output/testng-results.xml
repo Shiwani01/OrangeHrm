@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26038" started-at="2020-06-05T15:15:24Z" finished-at="2020-06-05T15:15:50Z">
+  <suite name="Default suite" duration-ms="34079" started-at="2020-06-10T11:23:27Z" finished-at="2020-06-10T11:24:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26038" started-at="2020-06-05T15:15:24Z" finished-at="2020-06-05T15:15:50Z">
-      <class name="com.qa.testcases.AddEntitlementTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AddEntitlementTest@2aaf7cc2]" name="setUp" is-config="true" duration-ms="23592" started-at="2020-06-05T20:45:24Z" finished-at="2020-06-05T20:45:48Z">
+    <test name="Default test" duration-ms="34079" started-at="2020-06-10T11:23:27Z" finished-at="2020-06-10T11:24:01Z">
+      <class name="com.qa.testcases.AddCandidateTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AddCandidateTest@725bef66]" name="setUp" is-config="true" duration-ms="24568" started-at="2020-06-10T16:53:27Z" finished-at="2020-06-10T16:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmpEntitlement()[pri:0, instance:com.qa.testcases.AddEntitlementTest@2aaf7cc2]" name="addEmpEntitlement" duration-ms="1558" started-at="2020-06-05T20:45:48Z" finished-at="2020-06-05T20:45:49Z">
+        <test-method status="PASS" signature="varifyCreditials()[pri:1, instance:com.qa.testcases.AddCandidateTest@725bef66]" name="varifyCreditials" duration-ms="9460" started-at="2020-06-10T16:53:51Z" finished-at="2020-06-10T16:54:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmpEntitlement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AddEntitlementTest@2aaf7cc2]" name="tearDown" is-config="true" duration-ms="836" started-at="2020-06-05T20:45:49Z" finished-at="2020-06-05T20:45:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.AddEntitlementTest -->
+        </test-method> <!-- varifyCreditials -->
+      </class> <!-- com.qa.testcases.AddCandidateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

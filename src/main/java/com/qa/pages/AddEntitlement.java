@@ -1,9 +1,6 @@
 package com.qa.pages;
 
-import java.awt.RenderingHints.Key;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -42,7 +39,8 @@ public class AddEntitlement extends TestBase {
         WebDriverWait wait=new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("entitlements_employee_empName")));
         clearbox.click();
-		emp.sendKeys(name);
+     
+        emp.sendKeys(name);
 		entitlement.sendKeys(title);
 		btnsave.click();
 	}

@@ -32,7 +32,7 @@ public class AssignLeaveTest extends TestBase {
 	}
     @Test(priority=1)
 	public void  varifyEnterName() {
-    	String name =assignleave.enterEmpName(prop.getProperty("emp"));
+    	String empname =assignleave.enterEmpName(prop.getProperty("emp"));
     }
     
     @Test

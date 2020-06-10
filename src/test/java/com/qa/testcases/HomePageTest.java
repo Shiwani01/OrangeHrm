@@ -10,12 +10,16 @@ import com.qa.pages.AdminPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LeavePage;
 import com.qa.pages.LoginPage;
+import com.qa.pages.PimPage;
+import com.qa.pages.RecruitmentPage;
 
 public class HomePageTest extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;
 	LeavePage leavepage;
 	AdminPage adminpage;
+	PimPage pimpage;
+	RecruitmentPage recruitment;
 
 	public HomePageTest() {
 		super();
@@ -45,6 +49,15 @@ public class HomePageTest extends TestBase {
 	@Test
 	public void varifyAdmin() {
 		adminpage = homepage.varifyAdminPage();
+	}
+	@Test
+	public void varifyPIM() {
+		pimpage=homepage.varifyPimPage();
+	}
+	
+	@Test
+	public void varifyRecruitment() {
+		recruitment=homepage.validateRecruitment();
 	}
 
 	@AfterMethod
