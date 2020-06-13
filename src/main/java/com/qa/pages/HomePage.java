@@ -8,6 +8,7 @@ import com.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
+	//Object Repository
 	@FindBy(id = "welcome")
 	WebElement welcomAdmin;
 
