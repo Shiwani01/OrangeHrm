@@ -1,0 +1,12 @@
+com/qa/testcases/AddEmployeeTest.class
+com/qa/testcases/PIMPageTest.class
+com/qa/testcases/AssignLeaveTest.class
+com/qa/testcases/EmployeeListTest.class
+com/qa/testcases/RecruitmentPageTest.class
+com/qa/testcases/AdminPageTest.class
+com/qa/testcases/EntitlementPageTest.class
+com/qa/testcases/HomePageTest.class
+com/qa/testcases/LoginPageTest.class
+com/qa/testcases/AddEntitlementTest.class
+com/qa/testcases/AddCandidateTest.class
+com/qa/testcases/LeavePageTest.class

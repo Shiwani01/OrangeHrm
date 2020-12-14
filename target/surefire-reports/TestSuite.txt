@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 72, Failures: 1, Errors: 0, Skipped: 71, Time elapsed: 0.418 sec <<< FAILURE!
+setUp(com.qa.testcases.AddCandidateTest)  Time elapsed: 0.244 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.base.TestBase.intialization(TestBase.java:41)
+	at com.qa.testcases.AddCandidateTest.setUp(AddCandidateTest.java:24)
+

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="72" failures="1" name="TestSuite" time="0.515" errors="0" skipped="71">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.265-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/stummulw/OrangeHrm"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/stummulw/OrangeHrm"/>
+    <property name="java.runtime.version" value="1.8.0_265-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.18.0-212.el8.x86_64"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/stummulw"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="stummulw"/>
+    <property name="java.class.path" value="/usr/share/java/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_265"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-0.el8_2.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.qa.testcases.AddCandidateTest" name="setUp" time="0.244">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.qa.base.TestBase.intialization(TestBase.java:41)
+	at com.qa.testcases.AddCandidateTest.setUp(AddCandidateTest.java:24)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@ba4d54
+</system-out>
+    <system-err>java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.AssignLeaveTest.&lt;init&gt;(AssignLeaveTest.java:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.PIMPageTest.&lt;init&gt;(PIMPageTest.java:21)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.AddCandidateTest.&lt;init&gt;(AddCandidateTest.java:19)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.LeavePageTest.&lt;init&gt;(LeavePageTest.java:27)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.AddEmployeeTest.&lt;init&gt;(AddEmployeeTest.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.EmployeeListTest.&lt;init&gt;(EmployeeListTest.java:21)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.HomePageTest.&lt;init&gt;(HomePageTest.java:25)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.LoginPageTest.&lt;init&gt;(LoginPageTest.java:16)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.AddEntitlementTest.&lt;init&gt;(AddEntitlementTest.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.EntitlementPageTest.&lt;init&gt;(EntitlementPageTest.java:28)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+java.io.FileNotFoundException: C:\Users\USER\Desktop\Selenium\orangehrm-project\src\main\java\com\qa\config\config.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.qa.base.TestBase.&lt;init&gt;(TestBase.java:26)
+	at com.qa.testcases.RecruitmentPageTest.&lt;init&gt;(RecruitmentPageTest.java:19)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:109)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:167)
+	at org.testng.TestClass.getInstances(TestClass.java:102)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:82)
+	at org.testng.TestClass.init(TestClass.java:74)
+	at org.testng.TestClass.&lt;init&gt;(TestClass.java:39)
+	at org.testng.TestRunner.initMethods(TestRunner.java:459)
+	at org.testng.TestRunner.init(TestRunner.java:338)
+	at org.testng.TestRunner.init(TestRunner.java:291)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:613)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:178)
+	at org.testng.SuiteRunner.&lt;init&gt;(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1275)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1100)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.testcases.AssignLeaveTest" name="setUp" time="0.257">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AssignLeaveTest" name="varifyleaveType" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AssignLeaveTest" name="setUp" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AssignLeaveTest" name="varifyEnterName" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.PIMPageTest" name="setUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.PIMPageTest" name="validateAddEmp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.PIMPageTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.PIMPageTest" name="validateEmpList" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddCandidateTest" name="varifyCreditials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="varifyAssignPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyjobTitle" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="varifyEntitlementPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyjobVacancy" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyHiringManager" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="varifyLeaveList" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="varifyReports" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LeavePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="validateTitle" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="setUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="validateCreditionals" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEmployeeTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EmployeeListTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EmployeeListTest" name="varifyEmpSearch" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="varifyAdmin" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="varifyHomePageTitleTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="varifyPIM" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="varifyRecruitment" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="verifyLeavePage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.HomePageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="ValidatetitleTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="tearDown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="validateLogin" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.LoginPageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEntitlementTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEntitlementTest" name="addEmpEntitlement" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.AddEntitlementTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="SetUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="varifyAddEnt" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="varifyEmpEnt" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.EntitlementPageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyStatus" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyCandidateCreaditials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="setUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qa.testcases.RecruitmentPageTest" name="varifyAddCandidate" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

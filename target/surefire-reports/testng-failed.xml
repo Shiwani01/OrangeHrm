@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.qa.testcases.AddEmployeeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateCreditionals"/>
+          <include name="validateTitle"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AddEmployeeTest -->
+      <class name="com.qa.testcases.EntitlementPageTest">
+        <methods>
+          <include name="varifyEmpEnt"/>
+          <include name="varifyAddEnt"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.EntitlementPageTest -->
+      <class name="com.qa.testcases.PIMPageTest">
+        <methods>
+          <include name="validateEmpList"/>
+          <include name="validateAddEmp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.PIMPageTest -->
+      <class name="com.qa.testcases.RecruitmentPageTest">
+        <methods>
+          <include name="varifyjobTitle"/>
+          <include name="varifyHiringManager"/>
+          <include name="varifyStatus"/>
+          <include name="varifyjobVacancy"/>
+          <include name="setUp"/>
+          <include name="varifyAddCandidate"/>
+          <include name="varifyCandidateCreaditials"/>
+        </methods>
+      </class> <!-- com.qa.testcases.RecruitmentPageTest -->
+      <class name="com.qa.testcases.EmployeeListTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="varifyEmpSearch"/>
+        </methods>
+      </class> <!-- com.qa.testcases.EmployeeListTest -->
+      <class name="com.qa.testcases.AddCandidateTest">
+        <methods>
+          <include name="varifyCreditials"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AddCandidateTest -->
+      <class name="com.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="ValidatetitleTest"/>
+          <include name="validateLogin"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+      <class name="com.qa.testcases.AddEntitlementTest">
+        <methods>
+          <include name="addEmpEntitlement"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AddEntitlementTest -->
+      <class name="com.qa.testcases.LeavePageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="varifyEntitlementPage"/>
+          <include name="varifyAssignPage"/>
+          <include name="varifyLeaveList"/>
+          <include name="varifyReports"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LeavePageTest -->
+      <class name="com.qa.testcases.AssignLeaveTest">
+        <methods>
+          <include name="varifyEnterName"/>
+          <include name="setUp"/>
+          <include name="varifyleaveType"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AssignLeaveTest -->
+      <class name="com.qa.testcases.HomePageTest">
+        <methods>
+          <include name="varifyAdmin"/>
+          <include name="varifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="verifyLeavePage"/>
+          <include name="SetUp"/>
+          <include name="varifyPIM"/>
+          <include name="varifyRecruitment"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
